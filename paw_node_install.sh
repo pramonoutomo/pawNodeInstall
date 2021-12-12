@@ -1,8 +1,8 @@
 #!/bin/sh
 
 #check installs
-command -v curl >/mnt/paw 2>&1 || { echo "Requires curl but it's not installed. If Ubuntu use apt-get install wget" >&2; exit 1; }
-command -v jq >/mnt/paw 2>&1 || { echo "Requires jq but it's not installed. If Ubuntu use apt-get install jq" >&2; exit 1; }
+#command -v curl >/mnt/paw 2>&1 || { echo "Requires curl but it's not installed. If Ubuntu use apt-get install wget" >&2; exit 1; }
+#command -v jq >/mnt/paw 2>&1 || { echo "Requires jq but it's not installed. If Ubuntu use apt-get install jq" >&2; exit 1; }
 
 #Install paw_node
 curl -s -L https://github.com/paw-digital/paw-node/releases/latest/download/linux-paw_node > /mnt/paw/paw_node
