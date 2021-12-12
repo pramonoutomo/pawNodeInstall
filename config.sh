@@ -10,6 +10,7 @@ then
     node_config=$(echo "$node_config" | sed "s/\#external_address\ \= \"\:\:\"/external_address = \"::ffff:${ip}\"/g")
     node_config=$(echo "$node_config" | sed "s/\#external_port\ \= 0/external_port = 7045/g")
     node_config=$(echo "$node_config" | sed "s/\#enable_voting\ \=\ false/enable_voting = true/g")
+    node_config=$(echo "$node_config" | sed "s/\#vote_minimum\ \=\ \"1000000000000000000000000000000\"/vote_minimum = \"1000000000000000000000000000\"/g")
     echo "$node_config" > $config_node_file
 fi
 
