@@ -22,3 +22,5 @@ then
     rpc_config=$(echo "$rpc_config" | sed "s/\#enable_control\ \=\ false/enable_control = true/g")
     echo "$rpc_config" > $rpc_node_file
 fi
+
+#end of script
