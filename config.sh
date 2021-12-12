@@ -1,6 +1,6 @@
 #!/bin/sh
 #Generate config for node
-config_node_file=Paw"/config-node.toml"
+config_node_file="Paw/config-node.toml"
 ip=$(curl -s https://ipinfo.io/ip)
 if [ ! -f $config_node_file ]
 then
@@ -14,7 +14,7 @@ then
 fi
 
 #Generate config for rpc
-rpc_node_file=Paw"/config-rpc.toml"
+rpc_node_file="Paw/config-rpc.toml"
 if [ ! -f $rpc_node_file ]
 then
     echo "Creating rpc config" $rpc_node_file
