@@ -10,7 +10,7 @@ chmod +x /mnt/paw/paw_node
 echo "Paw Node installed /mnt/paw/paw_node"
 
 #Create data dir
-datadir=/mnt/paw/"Paw"
+datadir="/mnt/paw/Paw"
 if [ ! -d $datadir ]
 then
     echo "Creating data directory ${datadir}"
