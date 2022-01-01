@@ -20,7 +20,11 @@ if [ ! -f $rpc_node_file ]
 then
     echo "Creating rpc config" $rpc_node_file
     rpc_config=$(./paw_node --generate_config rpc)
+    rpc_config=$(echo "$rpc_config" | sed "s/\#address\ \=\ \"::1\"/address = \"::ffff:0.0.0.0\"/g")
     rpc_config=$(echo "$rpc_config" | sed "s/\#enable_control\ \=\ false/enable_control = true/g")
+    rpc_config=$(echo "$rpc_config" | sed "s/\#max_json_depth\ \=\ 20/max_json_depth = 20/g")
+    rpc_config=$(echo "$rpc_config" | sed "s/\#max_request_size\ \=\ 33554432/max_request_size = 33554432/g")
+    rpc_config=$(echo "$rpc_config" | sed "s/\#port\ \=\ \"7046\"/port = 9999/g")
     echo "$rpc_config" > $rpc_node_file
 fi
 
