@@ -28,4 +28,4 @@ then
     echo "$rpc_config" > $rpc_node_file
 fi
 
-#end of script
+#end of script 
