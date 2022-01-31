@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if pkill -9 paw_node > /var/log/paw.log 2>&1; then
-/root/Paw/paw_node —daemon
+if pkill -9 paw_node > /mnt/pawdigital/paw.log 2>&1; then
+/mnt/pawdigital/paw_node --daemon --data_path=/mnt/pawdigital/Paw
 fi
 exit
