@@ -124,7 +124,7 @@ external_port = 7045
 
 # When calculating online weight, the node is forced to assume at least this much voting weight is online, thus setting a floor for voting weight to confirm transactions at online_weight_minimum * "quorum delta".
 # type:string,amount,raw
-#online_weight_minimum = "180000000000000000000000000000000000000"
+online_weight_minimum = "60000000000000000000000000000000000"
 
 # Password fanout factor.
 # type:uint64
@@ -139,7 +139,7 @@ external_port = 7045
 #pow_sleep_interval = 0
 
 # A list of "address" (hostname or ipv6 notation ip address) entries to identify preconfigured peers.
-#preconfigured_peers = ["peering.paw.digital"]
+preconfigured_peers = ["peering.paw.digital", "47.250.37.114", "185.177.59.231", "::ffff:204.48.29.36", "::ffff:159.223.199.104"]
 
 # A list of representative account addresses used when creating new accounts in internal wallets.
 #preconfigured_representatives = ["paw_1re5oi6cxgzj3rqf9cj8a7nbnqhiiie5kyknjrg8es845n8p1tckfpuu8b56", "paw_36yxozosuwcqu4yqra7amciorb6pbkk8zawqw7zsmz63kaq18qpyud7y3kx8", "paw_3dqy3kgbz9ubbrah8j15bbx1w8fz6wk6xscd8bpuoyasks6brj9a3o5akmze", "paw_1obpizjiqnxmpqw3f7oe38bc9nkj6psagahn5jx76gfjtkafhgxfac8sn6qr"]
